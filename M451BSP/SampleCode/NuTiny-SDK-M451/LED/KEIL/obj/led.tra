@@ -1,0 +1,25 @@
+*** Creating Trace Output File '.\obj\led.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\system_m451series.o"'
+### List of Objects: adding '".\obj\startup_m451series.o"'
+### List of Objects: adding '".\obj\main.o"'
+### List of Objects: adding '".\obj\gpio.o"'
+### List of Objects: adding '".\obj\clk.o"'
+### List of Objects: adding '".\obj\sys.o"'
+### List of Objects: adding '".\obj\retarget.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M4.fp ".\obj\system_m451series.o" ".\obj\startup_m451series.o" ".\obj\main.o" ".\obj\gpio.o" ".\obj\clk.o" ".\obj\sys.o" ".\obj\retarget.o" --library_type=microlib --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --feedback ".\obj\led.fed" 
+--strict --map --first='startup_M451Series.o(RESET)' --datacompressor=off --info=inline --entry Reset_Handler --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\lst\led.map" -o ".\obj\led.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\obj\led.axf'
+### ADS-LD Command File: '.\obj\led.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\obj\led.lnp', Handle=0x000005A4
+### Writing '.lnp' file
+### ADS-LD Command file '.\obj\led.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

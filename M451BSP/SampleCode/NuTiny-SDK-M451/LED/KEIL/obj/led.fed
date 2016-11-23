@@ -1,0 +1,56 @@
+;#<FEEDBACK># ARM Linker, 4.1 [Build 894]: Last Updated: Wed Nov 23 01:01:31 2016
+;VERSION 0.2
+;FILE clk.o
+CLK_DisableCKO <= USED 0
+CLK_DisableModuleClock <= USED 0
+CLK_DisableSysTick <= USED 0
+CLK_DisableXtalRC <= USED 0
+CLK_EnableCKO <= USED 0
+CLK_EnableModuleClock <= USED 0
+CLK_EnableSysTick <= USED 0
+CLK_GetCPUFreq <= USED 0
+CLK_GetHCLKFreq <= USED 0
+CLK_GetHXTFreq <= USED 0
+CLK_GetLXTFreq <= USED 0
+CLK_GetPCLK0Freq <= USED 0
+CLK_GetPCLK1Freq <= USED 0
+CLK_Idle <= USED 0
+CLK_PowerDown <= USED 0
+CLK_SetModuleClock <= USED 0
+__asm___5_clk_c_9b5832dc____REV16 <= USED 0
+__asm___5_clk_c_9b5832dc____REVSH <= USED 0
+;FILE gpio.o
+GPIO_DisableInt <= USED 0
+GPIO_EnableInt <= USED 0
+__asm___6_gpio_c_f8f858a7____REV16 <= USED 0
+__asm___6_gpio_c_f8f858a7____REVSH <= USED 0
+;FILE main.o
+__asm___6_main_c_SYS_Init____REV16 <= USED 0
+__asm___6_main_c_SYS_Init____REVSH <= USED 0
+;FILE retarget.o
+GetChar <= USED 0
+IsDebugFifoEmpty <= USED 0
+SendChar <= USED 0
+__asm___10_retarget_c_d5a1b03f____REV16 <= USED 0
+__asm___10_retarget_c_d5a1b03f____REVSH <= USED 0
+_ttywrch <= USED 0
+ferror <= USED 0
+fgetc <= USED 0
+kbhit <= USED 0
+;FILE startup_m451series.o
+;FILE sys.o
+SYS_ClearResetSrc <= USED 0
+SYS_DisableBOD <= USED 0
+SYS_EnableBOD <= USED 0
+SYS_GetBODStatus <= USED 0
+SYS_GetResetSrc <= USED 0
+SYS_IsRegLocked <= USED 0
+SYS_ReadPDID <= USED 0
+SYS_ResetCPU <= USED 0
+SYS_ResetChip <= USED 0
+SYS_ResetModule <= USED 0
+__asm___5_sys_c_962b9fbe____REV16 <= USED 0
+__asm___5_sys_c_962b9fbe____REVSH <= USED 0
+;FILE system_m451series.o
+__asm___19_system_M451Series_c_5d646a67____REV16 <= USED 0
+__asm___19_system_M451Series_c_5d646a67____REVSH <= USED 0

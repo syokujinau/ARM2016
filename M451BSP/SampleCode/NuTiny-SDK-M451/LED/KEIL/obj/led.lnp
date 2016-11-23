@@ -1,0 +1,4 @@
+--cpu Cortex-M4.fp ".\obj\system_m451series.o" ".\obj\startup_m451series.o" ".\obj\main.o" ".\obj\gpio.o" ".\obj\clk.o" ".\obj\sys.o" ".\obj\retarget.o" --library_type=microlib --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --feedback ".\obj\led.fed" 
+--strict --map --first='startup_M451Series.o(RESET)' --datacompressor=off --info=inline --entry Reset_Handler --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\lst\led.map" -o ".\obj\led.axf"

@@ -1,0 +1,1 @@
+-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork -I..\..\..\..\Library\Device\Nuvoton\M451Series\Include -I..\..\..\..\Library\StdDriver\inc -I..\..\..\..\Library\NuEdu\inc -I..\..\..\..\Library\CMSIS\Include -I C:\Keil_v5\ARM\RV31\Inc -I C:\Keil_v5\ARM\CMSIS\Include -o ".\obj\main.o" --omf_browse ".\obj\main.crf" --depend ".\obj\main.d" "..\main.c"
