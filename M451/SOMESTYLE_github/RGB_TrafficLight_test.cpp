@@ -1,4 +1,5 @@
 /******************************************************************************
+Behavior
 RGB                  |-----|-----|-----Y-----|--R--|--B--|
 7-Segment start|--0--|--1--|--2--|--3--|--4--|--5--|--6--|
                      |--7--|--8--|--9--|--10-|--11-|--12-|
@@ -19,7 +20,9 @@ void TMR0_IRQHandler(void)
     // clear Timer0 interrupt flag
     TIMER_ClearIntFlag(TIMER0);
 }
-
+/*---------------------------------------------------------------------------------------------------------*/
+/*  TMR1 IRQ handler                                                                                       */
+/*---------------------------------------------------------------------------------------------------------*/
 void TMR1_IRQHandler(void)
 {
         counter++;
@@ -66,15 +69,15 @@ int main(void)
     GPIO_SetMode(PC, BIT10, GPIO_MODE_OUTPUT);
     GPIO_SetMode(PC, BIT11, GPIO_MODE_OUTPUT);
 
-    //Enable Timer0 clock and select Timer0 clock source
+    //Enable Timer0、Timer1 clock and select Timer0 clock source
     CLK_EnableModuleClock(TMR0_MODULE);
     CLK_SetModuleClock(TMR0_MODULE, CLK_CLKSEL1_TMR0SEL_HXT, 0);
-        CLK_EnableModuleClock(TMR1_MODULE);
+    CLK_EnableModuleClock(TMR1_MODULE);
     CLK_SetModuleClock(TMR1_MODULE, CLK_CLKSEL1_TMR1SEL_HXT, 0);
-    //Initial Timer0 to periodic mode with 1Hz
+    //Initial Timer0、Timer1 to periodic mode with 1Hz
     TIMER_Open(TIMER0, TIMER_PERIODIC_MODE, 1);
     TIMER_Open(TIMER1, TIMER_PERIODIC_MODE, 1);
-    //Enable Timer0 interrupt
+    //Enable Timer0、Timer1 interrupt
     TIMER_EnableInt(TIMER0);
     NVIC_EnableIRQ(TMR0_IRQn);
     TIMER_EnableInt(TIMER1);
@@ -83,9 +86,9 @@ int main(void)
     //Initial 7-Segment
     Open_Seven_Segment();
 
-    //Start Timer0
+    //Start Timer0、Timer1
     TIMER_Start(TIMER0);
-        TIMER_Start(TIMER1);
+    TIMER_Start(TIMER1);
 
     while(1)
     {
@@ -96,6 +99,6 @@ int main(void)
     }
 }
 
-/*** (C) COPYRIGHT 2014~2015 Nuvoton Technology Corp. ***/
+/*** YC.Lin ***/
 
 
