@@ -1,4 +1,4 @@
-// Output : PWM0 (GPA12)
+// Output : PWM2 (GPA14) RGB red
 
 #include <stdio.h>
 #include "NUC1xx.h"
@@ -13,7 +13,7 @@ int a2;             //暫存目前亮度
 void InitPWM(void)
 {
  	/* Step 1. GPIO initial */ 
-	SYS->u32GPAMFP = 0x4000;	//0x1000 PWM0; 0x4000 PWM2
+	SYS->u32GPAMFP = 0x4000;	//0x4000 PWM2 (GPA14) RGB red
 	//SYS->u32ALTMFP=0x????;	//set ALT_MFP->PB11_PWM4=1 to open Buzzer
 	/*
 	Multiple Function Pin GPIOA Control Register (GPA_MFP)
@@ -41,7 +41,7 @@ void InitPWM(void)
 
 	PWMA->PCR.CH2INV=0;			//Inverter->0:off, 1:on
 	PWMA->PCR.CH2EN=1;			//PWM function->0:Disable, 1:Enable
- 	PWMA->POE.PWM2=1;			//Output to pin->0:Diasble, 1:Enable
+ 	PWMA->POE.PWM2=1;			//Output to pin->0:Diasble, 1:Enable 設定這個來暫時開關PWM功能
 	
 }
 

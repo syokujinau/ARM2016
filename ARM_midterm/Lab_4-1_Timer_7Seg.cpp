@@ -90,4 +90,7 @@ Timer中斷設定步驟 功能:開機後某個時間間隔做某件事
 Step1(39):選擇頻率，同時75行也須更改
 Step2(43):選擇MODE
 Step3(47):根據想要的秒數，用公式Timeout period = (1/AAA)*(BBB+1)* CCC = Y sec  求出CCC之值
+Time out period = 
+(Period of timer clock input) * (8-bit Prescale + 1) * (24-bit TCMPR) 
+
 *****************************************************/

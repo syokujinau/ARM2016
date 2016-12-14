@@ -1,0 +1,12 @@
+.\obj\main.o: ..\main.c
+.\obj\main.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdio.h
+.\obj\main.o: ..\..\..\..\Library\Device\Nuvoton\NUC1xx\Include\NUC1xx.h
+.\obj\main.o: ..\..\..\..\Library\CMSIS\Include\core_cm0.h
+.\obj\main.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\main.o: ..\..\..\..\Library\Device\Nuvoton\NUC1xx\Include\system_NUC1xx.h
+.\obj\main.o: ..\..\..\..\Library\Device\Nuvoton\NUC1xx\Include\SysInfra.h
+.\obj\main.o: ..\..\..\..\Library\Device\Nuvoton\NUC1xx\Include\ModuleID.h
+.\obj\main.o: ..\..\..\..\Library\NUC1xx\Include\GPIO.h
+.\obj\main.o: ..\..\..\..\Library\NUC1xx\Include\SYS.h
+.\obj\main.o: ..\..\..\..\Library\NUC1xx-LB_002\Include\Scankey.h
+.\obj\main.o: ..\..\..\..\Library\NUC1xx-LB_002\Include\LCD.h

@@ -115,5 +115,3 @@ Step2:Line47 選擇MODE，改TMR0_S (p.4) 0為12MHz範圍
 Step3:Line51 TCSR.MODE選MODE
 Step4:Line55 代公式求TCMPR，根據想要的秒數，用公式Timeout period = (1/AAA)*(BBB+1)* CCC = Y sec  求出CCC之值
 ********************************************/
-
-
