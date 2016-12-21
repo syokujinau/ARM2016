@@ -38,10 +38,10 @@ int32_t main (void)
 	int dtime=0;
 	DrvGPIO_Open(E_GPB,11, E_IO_OUTPUT);  //for buzzer
 	UNLOCKREG();
-  DrvSYS_SetOscCtrl(E_SYS_XTL12M,1);
-  DrvSYS_Delay(20000);				          // Delay for Xtal stable
-  while(!SYSCLK->CLKSTATUS.XTL12M_STB);
-  DrvSYS_SelectHCLKSource(0);
+	DrvSYS_SetOscCtrl(E_SYS_XTL12M,1);
+	DrvSYS_Delay(20000);				          // Delay for Xtal stable
+	while(!SYSCLK->CLKSTATUS.XTL12M_STB);
+	DrvSYS_SelectHCLKSource(0);
 	LOCKREG();
  
 	DrvGPIO_Open( E_GPC, 10, E_IO_OUTPUT);
@@ -56,22 +56,22 @@ int32_t main (void)
 	while(1)
 	{
 		TEXT1[0] = '\0';
-		                                              //tri echo
+		//get distance                           port,trig,echo                                           
 		dtime = get_Echo_Time_Ultrasonic_Ranger( E_GPC, 10, 11);
 		sprintf(TEXT1,"%.2f",(dtime*0.034)/2);
 		print_Line(1,TEXT1);
 		DrvSYS_Delay(100000);
 
 		if((dtime*0.034)/2 <= 10){
-				DrvGPIO_ClrBit(E_GPB,11);
-				DrvSYS_Delay(100000);
-			  DrvGPIO_SetBit(E_GPB,11);
-				DrvSYS_Delay(100000);
+			DrvGPIO_ClrBit(E_GPB,11);
+			DrvSYS_Delay(100000);
+		    DrvGPIO_SetBit(E_GPB,11);
+			DrvSYS_Delay(100000);
 		
 		}
 		else{
 			DrvGPIO_SetBit(E_GPB,11);
-		  DrvSYS_Delay(100000);
+		    DrvSYS_Delay(100000);
 		    
 		}
 			

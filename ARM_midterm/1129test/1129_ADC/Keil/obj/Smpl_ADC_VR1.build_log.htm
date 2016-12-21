@@ -3,41 +3,16 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-C:\Users\User\Desktop\Lab0\NUC140BSP_EDU\Library\SampleCode\1129_ADC\Keil\Smpl_ADC_VR1.uvproj
+G:\ARM_midterm\1129test\1129_ADC\Keil\Smpl_ADC_VR1.uvproj
 Project File Date:  11/03/2016
 
 <h2>Output:</h2>
 Build target 'Smpl_ADC_VR1'
-creating preprocessor file for main.c...
-compiling main.c...
-linking...
-Program Size: Code=8068 RO-data=240 RW-data=2096 ZI-data=2240  
-After Build - User command #1: fromelf --bin ".\obj\Smpl_ADC_VR1.axf" --output ".\obj\Smpl_ADC_VR1.bin"
-After Build - User command #2: fromelf --text -c ".\obj\Smpl_ADC_VR1.axf" --output ".\obj\Smpl_ADC_VR1.txt"
-".\obj\Smpl_ADC_VR1.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\User\\Desktop\\Lab0\\NUC140BSP_EDU\\Library\\SampleCode\\1129_ADC\\Keil\\obj\\Smpl_ADC_VR1.axf" 
+creating preprocessor file for core_cm0.c...
+core_cm0.c: Error:  #5: cannot open source input file "..\..\..\..\Library\CMSIS\Include\core_cm0.c": No such file or directory
+..\..\..\..\Library\CMSIS\Include\core_cm0.c: 0 warnings, 1 error
+".\obj\Smpl_ADC_VR1.axf" - 1 Error(s), 0 Warning(s).
+Target not created
 </pre>
 </body>
 </html>
-y02X();
-..\main.c(92): error:  #20: identifier "l" is undefined
-          l = resistance/1000;
-..\main.c(90): warning:  #177-D: variable "i" was declared but never referenced
-          int resistance,i;
-..\main.c(193): warning:  #174-D: expression has no effect
-    for(i; i<X; i++)DrvSYS_Delay(200000);
-..\main.c(194): warning:  #1-D: last line of file ends without a newline
-  }
-..\main.c: 5 warnings, 1 error
-creating preprocessor file for LCD.c...
-compiling LCD.c...
-creating preprocessor file for ADC.c...
-compiling ADC.c...
-creating preprocessor file for GPIO.c...
-compiling GPIO.c...
-creating preprocessor file for SPI.c...
-compiling SPI.c...
-creating preprocessor file for SYS.c...
-compiling SYS.c...
-".\obj\Smpl_ADC_VR1.axf" - 1 Error(s), 6 Warning(s).
-Target not created
